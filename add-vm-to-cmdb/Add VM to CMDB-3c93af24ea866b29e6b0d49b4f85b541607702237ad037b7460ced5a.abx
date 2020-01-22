@@ -5,14 +5,14 @@ name: "Add VM to CMDB"
 runtime: "python"
 entrypoint: "handler"
 inputs:
-  vra-user: "scott"
-  i-doit-user: "admin"
-  vra-FQDNorIP: "lab-vra.terasky.local"
-  vra-password: "Pajama1994"
-  i-doit-apiKey: "3rxjtcpkc7i8gggw"
-  i-doit-FQDNorIP: "172.16.20.148"
-  i-doit-password: "admin"
-  i-doit-VRA-VM-TypeID: 93
+  vra-user: "<CHANGE ME>"
+  i-doit-user: "<CHANGE ME>"
+  vra-FQDNorIP: "<CHANGE ME>"
+  vra-password: "<CHANGE ME>"
+  i-doit-apiKey: "<CHANGE ME>"
+  i-doit-FQDNorIP: "<CHANGE ME>"
+  i-doit-password: "<CHANGE ME>"
+  i-doit-VRA-VM-TypeID: <CHANGE ME>
 timeoutSeconds: 360
 deploymentTimeoutSeconds: 600
 dependencies: "requests"
