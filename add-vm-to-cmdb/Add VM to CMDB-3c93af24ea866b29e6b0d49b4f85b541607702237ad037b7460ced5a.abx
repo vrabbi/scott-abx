@@ -1,0 +1,24 @@
+---
+exportVersion: "1"
+exportId: "8a7480eb6f8bc002016fccdd65aa004e"
+name: "Add VM to CMDB"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  vra-user: "scott"
+  i-doit-user: "admin"
+  vra-FQDNorIP: "lab-vra.terasky.local"
+  vra-password: "Pajama1994"
+  i-doit-apiKey: "3rxjtcpkc7i8gggw"
+  i-doit-FQDNorIP: "172.16.20.148"
+  i-doit-password: "admin"
+  i-doit-VRA-VM-TypeID: 93
+timeoutSeconds: 360
+deploymentTimeoutSeconds: 600
+dependencies: "requests"
+actionType: "SCRIPT"
+configuration:
+  const-providers:
+  - "on-prem"
+  const_azure-system_managed_identity: false
+memoryInMB: 300

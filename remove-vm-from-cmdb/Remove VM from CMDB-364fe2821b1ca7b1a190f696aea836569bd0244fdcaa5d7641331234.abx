@@ -1,0 +1,20 @@
+---
+exportVersion: "1"
+exportId: "8a7480eb6f8bc002016fcd8a53a8009b"
+name: "Remove VM from CMDB"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  i-doit-user: "admin"
+  i-doit-apiKey: "3rxjtcpkc7i8gggw"
+  i-doit-FQDNorIP: "172.16.20.148"
+  i-doit-password: "admin"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+dependencies: "requests"
+actionType: "SCRIPT"
+configuration:
+  const-providers:
+  - "on-prem"
+  const_azure-system_managed_identity: false
+memoryInMB: 150
