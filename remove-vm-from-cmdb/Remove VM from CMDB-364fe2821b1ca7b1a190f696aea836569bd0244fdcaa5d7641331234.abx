@@ -5,10 +5,10 @@ name: "Remove VM from CMDB"
 runtime: "python"
 entrypoint: "handler"
 inputs:
-  i-doit-user: "admin"
-  i-doit-apiKey: "3rxjtcpkc7i8gggw"
-  i-doit-FQDNorIP: "172.16.20.148"
-  i-doit-password: "admin"
+  i-doit-user: "<CHANGE ME>"
+  i-doit-apiKey: "<CHANGE ME>"
+  i-doit-FQDNorIP: "<CHANGE ME>"
+  i-doit-password: "<CHANGE ME>"
 timeoutSeconds: 180
 deploymentTimeoutSeconds: 600
 dependencies: "requests"
