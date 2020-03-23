@@ -1,0 +1,16 @@
+---
+exportVersion: "1"
+exportId: "8a74809770e5d27401710769061b0050"
+name: "demo-01"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  target: "World"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+configuration:
+  const-providers:
+  - ""
+  const_azure-system_managed_identity: false
+memoryInMB: 150
